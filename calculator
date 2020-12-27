@@ -1,0 +1,111 @@
+import math 
+print(" ")
+print("1 for arithmetic operations")
+print("2 for trignometric operations")
+calc = int(input("enter one of the choice given above(1,2) : "))
+if calc == 1:
+    print(" please go through this")
+    print(" 1.sum + ")
+    print("2.difference - ")
+    print("3.multiplication * ")
+    print("4.division /")
+    print("5.remainder %")
+    print("6.index ^ ")
+    n1 = float(input(" ENTER NO. : "))
+    print(" ")
+    op = input("operation(eg:-+,-,*,/) : ")  
+    print(" ")    
+    if op== '+' :
+        n2 = float(input(" ENTER NO. : "))
+        print(n1+n2)
+    elif op == '-' :
+        n2 = float(input(" ENTER NO. : ")) 
+        print(n1-n2)
+    elif op== '*' :    
+        n2 = float(input(" ENTER NO. : "))
+        print(n1*n2)
+    elif op== '/' :
+        n2 = float(input(" ENTER NO. : "))
+        print(n1/n2)
+    elif op== '%' :
+        n2 = float(input(" ENTER NO. : "))
+        print(n1%n2)
+    elif op == '^' :
+        n2 = float(input(" ENTER NO. : "))
+        print(n1**n2)
+elif calc == 2:
+    print(" please go through this :- ")
+    print("      1.sin() s ") 
+    print("      2.cos() c ")
+    print("      3.tan() t ") 
+    print("      4.cosec() cs ")
+    print("     5.sec() se ")
+    print("      6.cot() co ")
+
+    print("      angles :- radian  rad ")
+    print("                degree deg")
+    ang = input("ENTER ANGLE (eg:- rad,deg) : ")
+    if ang == 'rad':
+          op = input("operation(eg:-s,c,t etc) :")
+          if op == 's':
+              n2= float(input("enter  angle : "))
+              print("sin(",n2,") = ",math.sin(n2))
+          elif op == 'c':
+              n2= float(input("enter  angle : "))
+              print("cos(",n2,") = ",math.cos(n2))
+              
+          elif op == 't':
+              n2= float(input("enter  angle : "))
+              print("tan(",n2,") = ",math.tan(n2))
+          elif op == 'cs':
+              n2= float(input("enter  angle : "))
+              print("cosec(",n2,") = ",1/(math.sin(n2)))
+          elif op == 'se':
+              n2= float(input("enter  angle : "))
+              print("sec(",n2,") = ",1/(math.cos(n2)))
+          elif op == 'co':
+              n2= float(input("enter  angle : "))
+              print("cot(",n2,") = ",1/(math.tan(n2)))
+          else:
+               print("ERROR")      
+    elif ang == 'deg':
+        op = input("operation(eg:-s,c,t etc) :")
+        if op == 's':
+              n2= float(input("enter  angle : "))
+              ang2 = ((n2)*(22/7))/180
+              print("sin(",n2,") = ",math.sin(ang2))
+        elif op == 'c':
+              n2= float(input("enter  angle : "))
+              ang2 = ((n2)*(22/7))/180
+              print("cos(",n2,") = ",math.cos(ang2))
+              
+        elif op == 't':
+              n2= float(input("enter  angle : "))
+              ang2 = ((n2)*(22/7))/180
+              print("tan(",n2,") = ",math.tan(ang2))
+        elif op == 'cs':
+              n2= float(input("enter  angle : "))
+              ang2 = ((n2)*(22/7))/180
+              print("cosec(",n2,") = ",1/(math.sin(ang2)))
+        elif op == 'se':
+              n2= float(input("enter  angle : "))
+              ang2 = ((n2)*(22/7))/180
+              print("sec(",n2,") = ",1/(math.cos(ang2)))
+        elif op == 'co':
+              n2= float(input("enter  angle : "))
+              ang2 = ((n2)*(22/7))/180
+              print("cot(",n2,") = ",1/(math.tan(ang2)))
+        else:
+               print("ERROR")
+        
+else:
+    print("ERROR")
+        
+          
+    
+          
+          
+          
+          
+          
+          
